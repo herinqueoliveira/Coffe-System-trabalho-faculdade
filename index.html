@@ -1,0 +1,157 @@
+!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <header>
+      <nav class="nav__bar">
+          <ul class="lista">
+            <li><a href="#img">Home</a></li>
+            <li><a href="#text2">Produtos</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+    </header>
+
+      <div class id="img">
+        
+        <div class="text fade-in">
+  <h2>Missão, Visão e Valores</h2>
+  <p class="missao">
+    <strong>Missão:</strong><br>
+    Oferecer experiências incríveis com café por meio de tecnologia, agilidade e personalização — conectando pessoas ao prazer de uma boa cafeteria, em qualquer lugar.
+    <br><br>
+
+    <strong>Visão:</strong><br>
+    Ser referência nacional em cafeterias digitais, unindo conveniência, qualidade e inovação no universo do café.
+    <br><br>
+
+    <strong>Valores:</strong><br>
+    • Paixão pelo café: valorizamos cada grão e preparo.<br>
+    • Inovação constante: buscamos sempre encantar com tecnologia.<br>
+    • Sustentabilidade: compromisso com o meio ambiente e a comunidade.<br>
+    • Excelência no atendimento: cada cliente é único.<br>
+    • Transparência: ética e clareza em tudo o que fazemos.<br>
+    • Agilidade com qualidade: rapidez sem abrir mão da experiência.
+  </p>
+</div>
+
+      </div>
+<div id="text2" class="produtos-titulo"> 
+  <h3>Nossos Produtos:</h3>
+</div>
+
+      <main class="geral">
+<section class="gr1">
+  <div>
+    <img src="img-berryblitz.jpeg" height="200px" width="300px">
+   <p>Chá de frutas vermelhas</p>
+  </div>
+  
+  <div>
+    <img src="img-myrtle-ave.jpeg" height="200px" width="300px">
+    <p>Chá de mirtilo</p>
+  </div>
+  
+  <div>
+    <img src="img-spiced-rum.jpeg" height="200px" width="300px">
+    <p>Café com especiarias</p>
+  </div>
+</section>
+<section class="gr2">
+  <div>
+    <img src="img-bedford-bizarre.jpeg" height="200px" width="300px">
+    <p>Café bizarro bedford</p>
+  </div>
+  
+  <div>
+    <img src="img-donut.jpeg" height="200px" width="300px">
+    <p>Donuts sazonais</p>
+  </div>
+</section>
+
+      </main>
+<section id="pdvs">
+  <h2>Tipos de PDV</h2>
+
+  <div class="pdv" onclick="mostrarDetalhes('tradicional')">
+    <h3>PDV Tradicional</h3>
+    <p>Ideal para cafeterias com fluxo médio a alto. Equipado com computador, impressora fiscal e mais.</p>
+  </div>
+  <div class="pdv" onclick="mostrarDetalhes('movel')">
+    <h3>PDV Móvel</h3>
+    <p>Tablet + Impressora Bluetooth. Flexível, ideal para espaços pequenos.</p>
+  </div>
+  <div class="pdv" onclick="mostrarDetalhes('auto')">
+    <h3>PDV Autoatendimento</h3>
+    <p>Totem para pedidos automáticos, reduz filas.</p>
+  </div>
+  <div class="pdv" onclick="mostrarDetalhes('qr')">
+    <h3>PDV com QR Code</h3>
+    <p>Pedidos feitos via celular na mesa. Experiência moderna.</p>
+  </div>
+  <div class="pdv" onclick="mostrarDetalhes('web')">
+    <h3>PDV Web-Based</h3>
+    <p>Roda direto no navegador, ideal para simplicidade.</p>
+  </div>
+
+  <div id="detalhes-pdv">
+    <h4 id="titulo-pdv"></h4>
+    <p id="descricao-pdv"></p>
+  </div>
+</section>
+
+ <section id="equipe">
+   <h2>Nossa Equipe de Desenvolvimento</h2>
+   <div class="membros">
+    <div class="membro">
+      <img src="joaodev.png" alt="João">
+      <p><strong>João Klaywe</strong><br>Desenvolvedor<br> Full Stack</p>
+    </div>
+    <div class="membro">
+      <img src="carlosdev.png" alt="Carlos">
+      <p><strong>Carlos Henrique</strong><br>Desenvolvedor<br>Back-End</p>
+    </div>
+    <div class="membro">
+      <img src="kauedev.png" alt="Kaue">
+      <p><strong>Kaue Henrique</strong><br>Desenvolvedor<br>Full Stack</p>
+    </div>
+    <div class="membro">
+      <img src="matheusdev.png" alt="Matheus">
+      <p><strong>Matheus Paulino</strong><br>Desenvolvedor<br>Front-End</p>
+    </div>
+  </div>
+</section>
+<section id="contato">
+  <h2>Fale Conosco</h2>
+  <form class="formulario" action="#" method="post">
+    <div class="campo">
+      <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+    </div>
+
+    <div class="campo">
+      <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+    </div>
+
+    <div class="campo">
+      <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem..."></textarea>
+    </div>
+
+    <button type="submit">Enviar mensagem</button>
+  </form>
+</section>
+
+<footer class="rodape">
+  <p>&copy; 2025 Coffee System. Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body> 
+</html>
